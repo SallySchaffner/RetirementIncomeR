@@ -1,40 +1,22 @@
-// RetirementIncome.cpp : 
-// This program shows how much needs to be deducted 
-// from your salary to reach your retirement goal.
+// main.cpp : 
+// This program calculates and displays a discounted price
 //
 
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main()
 {
-  double monthlySalary = 6000;
-  double percentToDeduct_1 = 5.5;
-  double percentToDeduct_2 = 7.33;
-  double percentToDeduct_3 = 10;
-  double amountDeducted;
+  double originalPrice = 59.95;
+  double discountPercentage = 20;
+  
+  double discountAmount = originalPrice * discountPercentage/100;
 
-  cout << "--------------------------------------------------" << endl;
-  cout << "My current monthly salary is $" << monthlySalary << endl;
-  cout << "--------------------------------------------------" << endl;
-  cout << "First potential deduction: " << endl;
-  amountDeducted = monthlySalary * (percentToDeduct_1 / 100);
-  cout << "Percent dedducted: " << 5 << "% ";
-  cout << "Amount deducted: $" << amountDeducted << endl;
-  cout << "--------------------------------------------------" << endl;
-
-  cout << "Second potential deduction: " << endl;
-  amountDeducted = monthlySalary * (percentToDeduct_2 / 100);
-  cout << "Percent dedducted: " << 7 << "% ";
-  cout << "Amount deducted: $" << amountDeducted << endl;
-  cout << "--------------------------------------------------" << endl;
-
-  cout << "Third potential deduction: " << endl;
-  amountDeducted = monthlySalary * (percentToDeduct_3 / 100);
-  cout << "Percent dedducted: " << 10 << "% ";
-  cout << "Amount deducted: $" << amountDeducted << endl;
+  cout << "Original Price = $" << originalPrice << endl;
+  cout << "Discount Percentage = " << discountPercentage << "%" << endl;
+  cout << "Discount amount = $" << discountAmount << endl;
+  cout << "Discounted price = $" << (originalPrice - discountAmount) << endl;
 
   return 0;
 
