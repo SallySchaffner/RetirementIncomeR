@@ -11,8 +11,8 @@ using namespace std;
 int main()
 {
   double monthlySalary = 6000;
-  double percentToDeduct_1 = 5;
-  double percentToDeduct_2 = 7;
+  double percentToDeduct_1 = 5.5;
+  double percentToDeduct_2 = 7.33;
   double percentToDeduct_3 = 10;
   double amountDeducted;
 
